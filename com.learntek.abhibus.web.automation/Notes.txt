@@ -1,0 +1,154 @@
+Mar 09:
+	Introduction
+	Selenium RC overview
+	Java and Eclipse installation
+	
+Mar 10:
+	Selenium webdriver overview
+		Selenium RC / 1.0 / Remote control + Server (Selenium) -> JS + Browser
+		Selenium + Web browser / 2.0/ 3.141.59 	  + Server (driver)	 + Browser
+		Web application only automated
+		Desktop application can't be automated
+	Java Basics
+		Class name should be starting with capital - JavaBasics
+		All other names should be starting with small letter - javaBasics
+		javaBasics - variable / object
+		javaBasics() - Method
+		JavaBasics - class
+		JavaBasics() - constructor
+		
+		
+		driver.findElement(By.id("")).click();
+		driver - object
+		findElement() - non-static method
+		By - class
+		id() - static method
+		click() - method
+		
+		method can be called by either class name or object name
+		class name - static method
+		object name - non-static method
+		
+		public WebElement findElement(By.id(""))
+		{
+		//..................
+		return new WebElement();
+		
+		}
+		
+	Typically the Classes will have methods and variables
+	
+	Data types, Variables
+	Arrays and loops
+	Exception handling
+	
+Eclipse Shortcuts:
+		// ctrl + shift +f - formating code
+		// ctrl + d - delete a line
+		// ctrl + space bar - sugegstions
+
+Mar 11:
+	Classes and objects:
+	// Classes:
+			// will have methods and variables
+			// blue print
+		// Object:
+			// copy of class
+			
+	class String{
+			
+			int abc =100;
+			
+			public void test()
+			{
+				
+			}
+			
+			
+		}
+		
+		Example objName = new Example();
+		objName.abc;
+		objName.test();
+
+	Data types
+	// Data types - 10
+		// primitive types - 8
+		// byte, short, int, long
+		// float, double, char, boolean
+		
+		// Non-Primitive data types
+		// String
+		// Arrays - group of values
+		
+	Variables
+		Local
+		Static / class
+		Non-static / instance
+	
+Mar 12:
+	Arrays:
+		// Arrays
+		// Group of values with same datatypes
+		// Arrays fixed with size
+
+		// Approch 1 => int[] rollNums = { 100, 101, 102 };
+		// Approch 2 => int[] rollNums1 = new int[3];
+	Loops:
+		For and for-each
+		for (int i = 0; i < rollNums1.length; i++) {}
+		for (int rollNum : rollNums1) {}
+	
+	Exception Handling:
+		// Error, exception
+		// Execution will be aborted
+
+		// Exception -2
+		// Compile time / checked exception
+		// Runtime / unchecked exception
+
+		// Way to handle -2
+		// throws => public static void main(String[] args) throws InterruptedException {
+		// try catch => try{} catch(){}
+	
+	GIT repo:
+		https://git-scm.com/downloads
+		
+		git status
+		git add file.txt
+		git commit -m "short note about commit"
+		git push origin develop => remote sys or github
+		
+		git pull origin develop => github to your local
+		git log
+		
+
+Mar 16:
+	Maven project
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+Hands-on:
+	// Datatypes - Mina
+	// variables - Ambika
+	// arrays - Naomi
+	// loops - Supriya
+	// Exception handling - Parijata
+
+		
