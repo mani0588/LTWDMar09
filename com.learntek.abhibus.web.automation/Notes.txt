@@ -114,17 +114,27 @@ Mar 12:
 	GIT repo:
 		https://git-scm.com/downloads
 		
+		First time use:
+		git remote add origin https://github.com/mani0588/LTWDMar09.git
+		git branch -M main
+		git clone https://github.com/mani0588/LTWDMar09.git
+		
 		git status
 		git add file.txt
 		git commit -m "short note about commit"
-		git push origin develop => remote sys or github
+		git push origin main => remote sys or github
 		
-		git pull origin develop => github to your local
+		git pull origin main => github to your local
 		git log
 		
 
 Mar 16:
+	String functions
+	Methods and inheritance
+	Collections basics
+
 	Maven project
+	
 	
 
 
