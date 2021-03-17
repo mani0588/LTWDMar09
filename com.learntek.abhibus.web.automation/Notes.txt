@@ -133,7 +133,13 @@ Mar 16:
 	Methods and inheritance
 	Collections basics
 
+Mar 17:
 	Maven project
+		Build automation tool
+		Libs can be downloaded automatically
+	Selenium configuration and basics
+	Locators
+	
 	
 	
 

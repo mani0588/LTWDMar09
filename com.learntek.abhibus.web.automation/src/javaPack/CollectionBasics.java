@@ -9,7 +9,9 @@ public class CollectionBasics {
 
 	public static void main(String[] args) {
 
-		// Collections - group of objects
+		// Collections
+		// group of objects
+		// Size is not fixed
 		CollectionBasics obj1 = new CollectionBasics();
 		CollectionBasics obj2 = new CollectionBasics();
 		CollectionBasics obj3 = new CollectionBasics();
