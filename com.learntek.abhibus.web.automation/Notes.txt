@@ -5,8 +5,8 @@ Mar 09:
 	
 Mar 10:
 	Selenium webdriver overview
-		Selenium RC / 1.0 / Remote control + Server (Selenium) -> JS + Browser
-		Selenium + Web browser / 2.0/ 3.141.59 	  + Server (driver)	 + Browser
+		Selenium RC / 1.0 / Remote control + Server (Selenium) jar file -> JS + Browser
+		Selenium + Web browser / 2.0/ 3.141.59 	  + Server (driver) exe file	 + Browser
 		Web application only automated
 		Desktop application can't be automated
 	Java Basics
@@ -138,6 +138,10 @@ Mar 17:
 		Build automation tool
 		Libs can be downloaded automatically
 	Selenium configuration and basics
+
+Mar 18:
+	Selenium basics
+	Handling diff elements
 	Locators
 	
 	
