@@ -171,4 +171,13 @@ Hands-on:
 	// loops - Supriya
 	// Exception handling - Parijata
 
-		
+	// WebDriver driver = new ChromeDriver(); // chrome browser opens
+	// Why the class name is changed to webdriver instead of chromedriver
+	// WebDriver - parent class
+	// Interface - 
+
+
+
+
+
+
