@@ -2,6 +2,7 @@ package selenium.automation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -28,9 +29,10 @@ public class SeleniumBasicMethods {
 		Thread.sleep(3000);
 
 		// Boolean methods
-		System.out.println(driver.findElement(By.name("email_to[]")).isDisplayed()); // true
-		System.out.println(driver.findElement(By.name("email_to[]")).isEnabled()); // true
-		System.out.println(driver.findElement(By.name("email_to[]")).isSelected()); // false
+		WebElement chk1 = driver.findElement(By.name("email_to[]"));
+		System.out.println(chk1.isDisplayed()); // true
+		System.out.println(chk1.isEnabled()); // true
+		System.out.println(chk1.isSelected()); // false
 
 		driver.close();
 

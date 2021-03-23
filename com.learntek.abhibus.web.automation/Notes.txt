@@ -174,8 +174,10 @@ Hands-on:
 	// WebDriver driver = new ChromeDriver(); // chrome browser opens
 	// Why the class name is changed to webdriver instead of chromedriver
 	// WebDriver - parent class
-	// Interface - 
+	// Interface - Supriya
 
+
+	// Why id / name is prefered than xpath? - Mina
 
 
 

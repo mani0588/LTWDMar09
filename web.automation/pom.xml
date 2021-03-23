@@ -5,47 +5,54 @@
 	<groupId>com.learntek.abhibus</groupId>
 	<artifactId>web.automation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<selenium.version>3.141.59</selenium.version>
+		<webdrivermanager.version>3.7.0</webdrivermanager.version>
+		<testng.version>7.0.0</testng.version>
+		<poi.version>4.1.1</poi.version>
+		<shutterbug.version>0.9</shutterbug.version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
+			<version>${selenium.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>3.7.0</version>
+			<version>${webdrivermanager.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-chrome-driver</artifactId>
-			<version>3.141.0</version>
+			<version>${selenium.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-firefox-driver</artifactId>
-			<version>3.141.0</version>
+			<version>${selenium.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.0.0</version>
+			<version>${testng.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>4.1.1</version>
+			<version>${poi.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
-			<version>4.1.1</version>
+			<version>${poi.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.assertthat</groupId>
 			<artifactId>selenium-shutterbug</artifactId>
-			<version>0.9</version>
+			<version>${shutterbug.version}</version>
 		</dependency>
 	</dependencies>
 </project>
