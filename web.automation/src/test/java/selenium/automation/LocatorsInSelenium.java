@@ -29,7 +29,6 @@ public class LocatorsInSelenium extends DriverUtil {
 
 		driver.findElement(By.xpath("//input[@tabindex='2']")).sendKeys("abcdr");
 
-		// group of elements
 		// xpath
 
 	}
