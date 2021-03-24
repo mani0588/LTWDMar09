@@ -25,7 +25,13 @@ public class HandlingGroupOfElements extends DriverUtil {
 		}
 		
 		// print text of all links
+		List<WebElement> allLinks = driver.findElements(By.xpath("//a"));
+		System.out.println("No. of links : " + allLinks.size());
 		
+		for (int i = 0; i < allLinks.size(); i++) {
+			System.out.println(allLinks.get(i).getText());
+		}
+
 
 	}
 
