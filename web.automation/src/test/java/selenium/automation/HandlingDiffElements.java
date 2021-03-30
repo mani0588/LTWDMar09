@@ -9,13 +9,11 @@ import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class HandlingDiffElements {
+public class HandlingDiffElements extends DriverUtil {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver(); // chrome browser opens
-		driver.get("https://www.mycontactform.com/samples.php");
+		getDriver();
 
 		// chk, rdio, drd, link, btn, menu, para / lbl / err msg, text box, file upload
 

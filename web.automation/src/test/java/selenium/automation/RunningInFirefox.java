@@ -6,13 +6,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class RunningInFirefox {
+public class RunningInFirefox extends DriverUtil {
 
 	public static void main(String[] args) {
-		
-		WebDriverManager.firefoxdriver().setup();
-		WebDriver driver = new FirefoxDriver(); // chrome browser opens
-		driver.get("https://www.mycontactform.com/samples.php");
+
+		getDriver();
 
 		// chk, rdio, drd, link, btn, menu, para / lbl / err msg, text box, file upload
 

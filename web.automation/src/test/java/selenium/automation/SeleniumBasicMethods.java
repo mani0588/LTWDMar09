@@ -7,14 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SeleniumBasicMethods {
+public class SeleniumBasicMethods extends DriverUtil {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver(); // chrome browser opens
-		driver.get("https://www.mycontactform.com/samples.php");
-
+		getDriver();
 		driver.manage().window().maximize();
 		System.out.println(driver.getCurrentUrl());
 		System.out.println(driver.getTitle());

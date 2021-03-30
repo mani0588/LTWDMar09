@@ -1,5 +1,7 @@
 package selenium.automation;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
 
 public class XpathLocators extends DriverUtil {
@@ -25,6 +27,19 @@ public class XpathLocators extends DriverUtil {
 //		contains - //h1[contains(text(),'and Contact')]
 		
 		// (//input[starts-with(@name,'email_to')])[3]
+		
+		// Getting paragraph value
+		String para = driver.findElement(By.xpath("//h1[@class='topbullet']/following-sibling::p")).getText();
+		System.out.println(para);
+		
+		// locate file upload using attach a file lable
+		String path = new File("").getAbsolutePath().concat("\\pom.xml");
+		driver.findElement(By.xpath("//label[@for='attach4589']/following-sibling::input")).sendKeys(path);
+
+		// Print the group name of Basic Contact Form link
+		String header = driver.findElement(By.xpath("//a[contains(text(),'Basic Contact Form')]/ancestor::ul/preceding-sibling::h5")).getText();
+		System.out.println(header);
+		
 		
 
 	}

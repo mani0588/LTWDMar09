@@ -152,7 +152,9 @@ Mar 24:
 	Group of elemnets
 	Git branch and commands
 	
-	
+Mar 30:
+	Frames, wind, alert
+	Screenshots
 
 
 
@@ -185,6 +187,9 @@ Hands-on:
 
 
 	// Why id / name is prefered than xpath? - Mina
+	
+	html/body/div/div/div/form/fieldset/div/label - absolute xpath
+	//label[@for='user'] - relative xpath
 
 
 
