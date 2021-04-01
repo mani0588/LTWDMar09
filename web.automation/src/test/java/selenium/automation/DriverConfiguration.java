@@ -8,8 +8,6 @@ public class DriverConfiguration extends DriverUtil {
 		//driver.manage().window().maximize();
 		
 		System.out.println(driver.getTitle());
-		
-
 	}
 
 }

@@ -162,6 +162,8 @@ Mar 31:
 Apr 1:
 	Waits
 	Driver configs
+
+Apr 2:
 	TestNg basics
 
 
@@ -192,13 +194,14 @@ Hands-on:
 	html/body/div/div/div/form/fieldset/div/label - absolute xpath
 	//label[@for='user'] - relative xpath
 
+	// Find how many frames in a page?
+	// Switch to last window?
+
 	// WebDriver driver = new ChromeDriver(); // chrome browser opens
 	// Why the class name is changed to webdriver instead of chromedriver
 	// WebDriver - parent class
 	// Interface - Supriya
+	// Selenium - WebDriver, WebElement
+	// Java - List, Set
 	
-	// Find how many frames in a page?
-	// Switch to last window?
-
-
 
