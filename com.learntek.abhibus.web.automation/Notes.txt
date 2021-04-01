@@ -154,7 +154,15 @@ Mar 24:
 	
 Mar 30:
 	Frames, wind, alert
+	
+Mar 31:
 	Screenshots
+	Mouse and actions
+	
+Apr 1:
+	Waits
+	Driver configs
+	TestNg basics
 
 
 
@@ -180,18 +188,17 @@ Hands-on:
 	// loops - Supriya
 	// Exception handling - Parijata
 
+	// Why id / name is prefered than xpath? - Mina
+	html/body/div/div/div/form/fieldset/div/label - absolute xpath
+	//label[@for='user'] - relative xpath
+
 	// WebDriver driver = new ChromeDriver(); // chrome browser opens
 	// Why the class name is changed to webdriver instead of chromedriver
 	// WebDriver - parent class
 	// Interface - Supriya
-
-
-	// Why id / name is prefered than xpath? - Mina
 	
-	html/body/div/div/div/form/fieldset/div/label - absolute xpath
-	//label[@for='user'] - relative xpath
-
-
+	// Find how many frames in a page?
+	// Switch to last window?
 
 
 
