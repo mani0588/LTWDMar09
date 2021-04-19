@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Mycontactform Applicaiton" verbose="1">
+	<test name="Regression Testing with chrome FN11/23">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="pom.LoginFunctionalities" />
+		</classes>
+	</test>
+	<test name="Regression Testing with firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="pom.LoginFunctionalities" />
+		</classes>
+	</test>
+</suite>

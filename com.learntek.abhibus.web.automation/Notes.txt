@@ -165,23 +165,6 @@ Apr 1:
 
 Apr 2:
 	TestNg basics
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
 	
 Hands-on:
 	// Datatypes - Mina
@@ -205,3 +188,6 @@ Hands-on:
 	// Java - List, Set
 	
 
+Excel - 
+Css selector - 
+Grid - 
