@@ -4,12 +4,14 @@
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="pom.LoginFunctionalities" />
+			<class name="pom.FacebookSignupFunctionalities" />
 		</classes>
 	</test>
 	<test name="Regression Testing with firefox">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="pom.LoginFunctionalities" />
+			<class name="pom.FacebookSignupFunctionalities" />
 		</classes>
 	</test>
 </suite>
