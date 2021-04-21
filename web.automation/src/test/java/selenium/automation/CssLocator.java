@@ -7,7 +7,7 @@ public class CssLocator extends DriverUtil {
 	public static void main(String[] args) {
 
 		getDriver();
-		driver.findElement(By.cssSelector("a")).sendKeys("Hello");
+		driver.findElement(By.cssSelector("#subject")).sendKeys("Hello");
 
 		// # - by id
 		// . - by class name
