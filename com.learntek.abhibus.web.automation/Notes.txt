@@ -186,8 +186,3 @@ Hands-on:
 	// Interface - Supriya
 	// Selenium - WebDriver, WebElement
 	// Java - List, Set
-	
-
-Excel - 
-Css selector - 
-Grid - 
