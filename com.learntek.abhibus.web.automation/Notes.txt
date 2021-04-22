@@ -186,3 +186,40 @@ Hands-on:
 	// Interface - Supriya
 	// Selenium - WebDriver, WebElement
 	// Java - List, Set
+
+	
+	
+	
+	
+	
+	
+	
+xml file with parallel attribute
+listeners
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

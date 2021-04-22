@@ -10,8 +10,8 @@ public class SignupPage {
 
 	WebDriver driver;
 
-	public SignupPage(WebDriver myDriver) {
-		driver = myDriver;
+	public SignupPage(WebDriver driver) {
+		this.driver = driver;
 	}
 
 	@FindBy(name = "firstname")
