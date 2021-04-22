@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Mycontactform Applicaiton" verbose="1">
 	<listeners>
-		<listener name="listeners.MyTestListener"></listener>
+		<listener class-name="listeners.MyTestListener"></listener>
 	</listeners>
 	<test name="Regression Testing with chrome FN11/23">
 		<parameter name="browser" value="chrome"></parameter>
