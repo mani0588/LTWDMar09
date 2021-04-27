@@ -1,0 +1,292 @@
+REST
+	Roy Fielding in 2000
+	Architecture / pattern
+	Stands for Representational state transfer
+	Is a web service
+	Client dosen't want to know anything about application in server
+	REST doesn't allow server to store any information that sent by client
+	Client and Server communicate each other via HTTP using
+		URI
+		CRUD
+		JSON
+
+Webservice
+	Services that implements REST
+	Collection of open protocols and standards used for exchanging data between applications or systems or client and server
+
+REST Evolution:
+	RPC
+		Remote Procedure Call
+		Oldest or simplest type of API
+		Tightly coupled
+		XML-RPC
+			Data format will be in XML
+		JSON-RPC
+	SOAP
+		Simple Object Access Protocol
+		Official protocol defined by W3C
+		W3C - world wide web consortium
+		Secured, light weight and fast
+	RESTful
+	
+Types of Web services
+	SOAP
+		SOAP is an XML-based protocol for accessing web services over HTTP
+		Envelope is an root element
+		Two parts
+			headers
+			body
+			
+	RESTful (JAX-RS JAVA API for RESTful ws / javax.ws.rs package)
+		REST Architecture based Web Services
+		Heterogeneous launguages and environments
+		Communicate between applications that are built in different language / environments
+		Everything is a resource and each of them identified by URI / Global IDs
+		Light weight, highly scalable and maintainable
+		Very commonly used to create APIs for web-based applications
+	XML-RPC - tightly coupled and old implementation
+	JSON-RPC
+	
+Resources Types:
+	Request
+		JSON
+		XML
+		HTML
+		TEXT
+		JavaScript
+	Response
+		JSON
+		XML
+		HTML
+		TEXT
+		Auto
+		
+Elements or component
+	Resources - API class and methods
+		@Path("")
+	Request Verb - Request method / type
+		GET - read
+		POST - creat
+		PUT - update
+		DELETE - delete resource / move to inaccessible location
+		OPTIONS - get the supported operations on a resource
+	Request Headers
+		Additional information sent with request
+		Type of response required
+		Authorization details
+	Request Body
+		Additional data sent for POST type
+		This will add a resource to the server
+	Response Body
+		Main body of response
+	Response status code
+	
+Project / API implementation:
+	Generally 3 classes will be for one service
+		User.java - POJO class where it represents a table / json / xml and map fields
+		UserDao.java - Data Access Object - methods to perform CRUD operations
+		UserServices.java	-	This is service class where requests will be directly handled
+			@GET
+			@Path("/users")
+			@Produces(MediaType.APPLICATION_XML)
+			@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+			@FormParam("name") String name
+			@PathParam
+			@QueryParam
+			@HeaderParam
+			@MatrixParam
+			
+Types of API Authentication
+	No Auth
+	Bearer Token
+	Basic auth
+	Digest Auth
+	OAuth 1.0
+	OAuth 2.0
+	NTLM Authentication
+	Hawk Authentication
+	AWS Signature
+	
+Response codes
+	There are five values for the first digit:
+		1xx (Informational): The request is received and continues to be processed
+		2xx (Successful): The request is successfully received, understood, and accepted
+		3xx (Redirection): Further action needs to be taken to complete the request
+		4xx (Client Error): The request contains the wrong syntax or cannot be fulfilled
+		5xx (Server Error): The server fails to fulfill an apparently valid request
+	
+	200	- Success / ok
+	201 - Created -> New resource created
+	204 - No content - when response is empty / method is not defined
+	
+	301 - Moved permanently
+	
+	400 - Bad request -> Non-specific failure. When no other error code (4XX) is appropriate / Malformed parameter
+	401 - Unauthorized - No permission to do specific operation
+	403 - Forbidden / when accept header not specified
+	404 - Not Found -> When rest API can't map client URI to resource, but available in future
+	
+	500 - Internal Server Error
+	501 - Not implemented - If URI not understandable by resource
+
+Caching
+	max-age - set expiry time
+	must-revalidate - validation should be enabled after expiry
+	cache-control - control of cache
+
+Negative Scenarios
+	With different protocol - http, https
+	Without accept header
+	Invalid header
+	Invalid token
+	Different level of authentication
+	
+Automation tools
+	Katalon Studio (support data-driven)
+		Open source
+		Web and Desktop Application
+		Mobile app
+		API - SOAP and REST request
+		Reports - Monitoring, Analytics, Insights
+		Integration - Jira, CI/CD, DevOps
+	Postman
+		Chrome plugin
+		Support Rest
+		Support integration test - Swagger and RAML format
+		Has Run, Test, Documentation and Monitoring features
+		Support GraphQL request, schemas, variables and query
+	SoapUI
+		Support Rest and Soap request
+		Load test and security scans can be done
+		Data-driven - from files, database, excel
+		Support CI/CD
+	Rest-Assured
+		Open source
+		Support Rest
+		Integrated with serenity
+		So support UI + Rest
+		Support BDD - given, when, then
+	JMeter
+		Open source
+		Support load and API testing
+		Support CI/CD
+	APIGee
+		Cross-cloud API testing tool
+		Powered by Javascript
+	
+Difference between GET and POST:
+	GET - when not passing any sensitive / confidential data, not large parameters, 
+	GET method passes request parameter in URL String while POST method passes request parameter in request body.
+	GET request can only pass limited amount of data while POST method can pass large amount of data to server.
+	GET request can be bookmarked and cached unlike POST requests.
+	GET is mostly used for view purpose (e.g. SQL SELECT) while POST is mainly use for update purpose (e.g. SQL INSERT or UPDATE).
+
+Service Provider or Publisher
+	Who is providing API classes and service
+Service Requestor or Consumer
+	who is using this service
+	
+Difference bw SOAP and RESTFul
+
+Http Methods:
+	15 http methods are there
+	7 popular methods are,
+		GET - retreive data from a server
+		POST - create or udpate a resource
+		PUT - create or update a resource (PUT request is idempotent - multiple request will not make any side-effects an returns same result)
+		PATCH - partial modifications to the resource (non-idempotent)
+		DELETE - delete the resource at the specified URL
+		HEAD - useful for checking what a GET request will return before actually making GET request (like before downloading large file). verifying that a resource is available (idempotent)
+		OPTIONS - other methods and operations the server supports
+
+Http Headers:
+		https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+		Generl headers
+		Request headers
+		Response headers
+		Entity headers
+		
+		Authentication - WWW-Authenticate, Authorization, Proxy-Authenticate, Proxy-Authorization
+		Caching - Age, Cache-Control, Expires
+		Conditionals - Last-Modified, ETag, If-Match, If-None-Match, If-Modified-Since, If-Unmodified-Since, 
+		Conenction Management - Connection, Keep-Alive
+		Content Negotiation - Accept-Encoding, Accept-Language
+		Downloads - Content-Disposition
+		Message body information - Content-Length, Content-Type, Content-Encoding, Content-Language, Content-Location
+		Proxies - X-Forwarded-Host, X-Forwarded-Proto
+		Redirects - Location
+		Request context - From, Host, Referer, Referrer-Policy, User-Agent
+		Range requests - Accept-Ranges, If-Range, Content-Range
+		Security - Strict-Transport-Security (HSTS), X-Frame-Options (XFO), X-XSS-Protection
+		Transfer encoding - Transfer-Encoding
+		Web Sockets - Sec-WebSocket-Accept
+		Cookies - Cookie, Set-cookie
+		Response context
+
+Error codes:
+	1xx: Informational - Communicates transfer protocol-level information
+	2xx: Success - request was accepted successfully
+		200 Ok
+		201 Created
+		202 Request accepted but in-progress
+		204 No body content
+
+	3xx: Redirection - client must take more action in order to complete their request
+		301 Moved permanently - resource redesigned and response header should have the new URI details
+		304 Not modified - no body content and not modified since then - If-Modified-Since
+		
+	4xx: Client Error
+		400 Bad Request
+		401 Unauthorized - invalid / expired token, null token
+		403 Forbidden - no permission on the sepcific resource
+		404 Not Found - resource not found
+		405 Method Not Allowed - http method not allowed
+		409 Conflict - duplicate record creation by POST method
+		
+	5xx: Server Error
+		500 Internal Server Error - when server raises an exception
+		503 Service unavailable - feature not implemented or unregognized http method
+		
+JSON data structure:
+	JSON - JavaScript object notation
+	Language independent
+	Store and exchange data
+	Object to JSON - JSON.stringify(myObj);
+	JSON to object - JSON.parse(myJSON);
+	
+	Datatypes:
+		String - { "name":"John" }
+		Number - { "age":30 }
+		Boolean - { "sale":true }
+		Null - { "middlename":null }
+		Object:
+			{
+			"employee":{ "name":"John", "age":30, "city":"New York" }
+			}
+		Array:
+			{
+			"employees":[ "John", "Anna", "Peter" ]
+			}
+
+	List<Students> to JSON:
+		{
+		"Students": [
+			{ "id": "1", "name": "stuName1" },
+			{ "id": "2", "name": "stuName2" } 
+		]
+	}
+
+Javax.ws.rs:
+	JAX-RS is specification
+	popular JAX-RS implementations are - Jersey, RestEasy, Restlet, Apace CFX, RestAssured
+
+	@GET, @POST, @PUT, @DELETE - Represents http methods
+	@Produces - what type of output returns by the method
+	@Consumes - what type of input consumes by the method
+	@Path - specify the URL path
+	@PathParam - REST-style URL parameters to method arguments using @PathParam
+	@QueryParam - Request parameters in query string can be accessed
+	@FormParam - Form parameter can be accessed directly
+	@HeaderParam
+	@CookieParam
+	@Context
